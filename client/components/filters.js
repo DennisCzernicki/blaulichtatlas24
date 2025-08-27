@@ -140,7 +140,8 @@ class IncidentFilters {
     }
     
     if (mobileContainer) {
-      mobileContainer.innerHTML = filterHTML;
+      // For mobile, wrap in padding container
+      mobileContainer.innerHTML = `<div style="padding: var(--space-xl);">${filterHTML}</div>`;
     }
   }
 
